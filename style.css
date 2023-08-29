@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-green:#3EB651;
+    --card-bg:#E6E6E6;
+    --card-ibg:#F2F2F2;
+    --text-hd:#2C2B2B;
+    --text-sec:#585858;
+    --text-org:#D15D38;
+
+}
+
+
+body{
+    background: var(--card-ibg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p{
+    font-size:11px;
+    margin:0;
+    color: var(--text-sec);
+    font-weight:00;
+}
+h4,h5,h6{
+    margin:0;
+    color:var(--text-hd);
+    font-weight:600;
+}
+.card{
+    max-width: 264px;
+    width:100%;
+    background:var(--card-bg);
+    height:371px;
+    border-radius:4px;
+   
+   
+}
+
+.card_header{
+    height:62px;
+    background:var(--primary-green);
+    padding:0 12px;
+    position: relative;
+    display:flex;
+    align-items:center;
+    border-radius:4px 4px 0 0;
+    overflow: hidden;
+    position: relative;
+
+    >h4{
+        color: var(--card-ibg);
+        font-size: 14px;
+        margin:0;
+        font-weight:600;
+    }
+    >img{
+        position: absolute;
+        right:-15px;
+        top:12px;
+    }
+}
+
+.card_body{
+    max-width:100%;
+    padding:6px;
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+}
+.card_item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--card-ibg);
+    padding:8px 12px;
+    border-radius:4px;
+
+}
+.left{
+    display:flex;
+    flex-direction: column;
+    gap:2px;
+
+    >h5{
+        font-size:12px;
+    }
+
+    .details{
+        display:flex;
+        align-items:center;
+        gap:8px
+
+    }
+}
+
+.divider{
+    height: 10px;
+    border-left:1px solid var(--text-sec);
+}
+
+.right{
+    .total_details{
+        display:flex;
+        align-items:center;
+        gap:4px;
+        >h4{
+            color:var(--text-org);
+            font-weight:600;
+        }
+       
+    }
+}
+
+
+
+
+/* Global Classes */
+
+/* .container
+-maxWidth,margin
+*/
+
+/* .flex-row
+-
+-wrap
+*/
+
+/* .flex-row
+-
+-h1,h2,h3
+
+-Color codes, 3-4
